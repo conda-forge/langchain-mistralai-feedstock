@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - pdm-backend
+    - hatchling
     - pip
   run:
     - pydantic >=2.0.0,<3.0.0
