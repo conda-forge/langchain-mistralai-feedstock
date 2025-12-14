@@ -1,5 +1,5 @@
 {% set name = "langchain-mistralai" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_mistralai-{{ version }}.tar.gz
-  sha256: 04046571a879201a81ff9c34c350b1e1f1bd7775efd6e17cedbb0e7386cd244d
+  sha256: 2430dd6c5e714252ce58bdf9453da4e1f2c694e239dde7e9c4d488a6d1ef2368
 
 build:
   noarch: python
