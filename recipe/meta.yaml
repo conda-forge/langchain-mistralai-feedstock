@@ -1,5 +1,5 @@
 {% set name = "langchain-mistralai" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_mistralai-{{ version }}.tar.gz
-  sha256: 2430dd6c5e714252ce58bdf9453da4e1f2c694e239dde7e9c4d488a6d1ef2368
+  sha256: 3c852b1b2d8a729299f25fba7d5c9cadb9e2128387c2771745e8e8cb412b33cd
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - pydantic >=2.0.0,<3.0.0
     - python >={{ python_min }},<4.0
-    - langchain-core >=1.1.0,<2.0.0
+    - langchain-core >=1.2.19,<2.0.0
     - tokenizers >=0.15.1,<1.0.0
     - httpx >=0.25.2,<1.0.0
     - httpx-sse >=0.3.1,<1.0.0
