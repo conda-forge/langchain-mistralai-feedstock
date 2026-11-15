@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langchain-mistralai
-  version: 1.1.6
+  version: 1.2.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langchain_mistralai-${{ version }}.tar.gz
-  sha256: c2694828adee61a497c571e25eaba1472095cd1d1f260a7fe15a6e60f9ece039
+  sha256: 59b1729f1b1357531793a87ab1e322903217710aadad1c5c1fa761249c519c35
 
 build:
   number: 0
@@ -23,12 +23,12 @@ requirements:
     - hatchling
     - pip
   run:
-    - pydantic >=2.0.0,<3.0.0
+    - pydantic >=2.0.0
     - python >=${{ python_min }},<4.0
-    - langchain-core >=1.4.7,<2.0.0
-    - tokenizers >=0.15.1,<1.0.0
-    - httpx >=0.25.2,<1.0.0
-    - httpx-sse >=0.3.1,<1.0.0
+    - langchain-core >=1.8.1,<2.0.0
+    - tokenizers >=0.15.1
+    - httpx >=0.25.2
+    - httpx-sse >=0.3.1
 tests:
   - python:
       imports:
